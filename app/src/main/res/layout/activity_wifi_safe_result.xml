@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal">
+
+    <LinearLayout
+        android:id="@+id/layout_wifi_safe"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_gradient_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_20dp">
+
+        <TextView
+            android:id="@+id/text_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="Safe"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/text_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="Speed 300KB/S"
+            android:textColor="@color/white_70" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mtoolbar"
+        layout="@layout/layout_toolbar_alpha" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mtoolbar"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+
+</RelativeLayout>

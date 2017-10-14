@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12dp"
+        android:drawableLeft="@drawable/ic_forgot_mail_1"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:gravity="center_vertical"
+        android:text="@string/lock_forgot_tip_1"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_lock_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_12dp"
+        android:layout_marginRight="@dimen/margin_12dp"
+        android:gravity="center"
+        android:textColor="@color/bg_blue_normal"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/btn_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/bg_btn_blue"
+        android:gravity="center"
+        android:text="@string/lock_send_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_button"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/margin_12dp"
+        android:layout_marginRight="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:background="@drawable/line_dotted"
+        android:layerType="software"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12dp"
+        android:drawableLeft="@drawable/ic_forgot_mail_2"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:gravity="center_vertical"
+        android:text="@string/lock_forgot_tip_2"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/et_ver_code"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#F0F0F0"
+        android:inputType="number"
+        android:lines="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="@color/font_deep_gray"
+        android:textColorHint="@color/font_light_gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_gray"
+        android:gravity="center"
+        android:text="@string/lock_reset_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_button"/>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5dp"
+    android:paddingTop="@dimen/margin_5dp">
+
+    <TextView
+        android:id="@+id/text_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_clicked"
+        android:drawableLeft="@drawable/ic_download_install"
+        android:drawablePadding="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:text="@string/open"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/text_set_as"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_clicked"
+        android:drawableLeft="@drawable/ic_del"
+        android:drawablePadding="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:text="@string/set_as"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_clicked"
+        android:drawableLeft="@drawable/ic_download_share"
+        android:drawablePadding="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:text="@string/share"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/text_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_clicked"
+        android:drawableLeft="@drawable/ic_download_del"
+        android:drawablePadding="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:text="@string/delete"
+        android:textAllCaps="true"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

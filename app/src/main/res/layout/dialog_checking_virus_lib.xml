@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="@dimen/margin_50dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:indeterminateDrawable="@drawable/progressbar_checking_virus_lib"
+        android:indeterminateDuration="1500"
+        android:padding="@dimen/margin_10dp" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_toRightOf="@+id/progress"
+        android:gravity="left"
+        android:paddingRight="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_15dp"
+        android:text="Checking"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/AppTheme.Line_H"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="@dimen/margin_15dp" />
+
+    <TextView
+        android:id="@+id/text_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:background="@drawable/bg_white_bottom_corner"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="CANCEL"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_17" />
+</RelativeLayout>

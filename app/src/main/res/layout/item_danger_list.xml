@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_home_scan_item">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/margin_40dp"
+            android:layout_height="@dimen/margin_40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:src="@drawable/ic_broswer"/>
+
+        <ImageView
+            android:id="@+id/img_virus"
+            android:layout_width="@dimen/margin_25dp"
+            android:layout_height="@dimen/margin_25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/ic_virus_2"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/text_fix"
+            android:layout_toRightOf="@+id/img_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dasdjklasjdla"
+                android:textColor="@color/font_deep_gray"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/text_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_title"
+                android:layout_marginTop="3dp"
+                android:text="风险应用"
+                android:textColor="@color/font_red_color"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/view_line"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/view_line"
+            android:src="@drawable/ic_triangle"/>
+
+        <TextView
+            android:id="@+id/text_fix"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_1"
+            android:background="@drawable/bg_tr_clicked"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:drawableTop="@drawable/ic_fix"
+            android:gravity="center"
+            android:padding="@dimen/margin_12dp"
+            android:text="Uninstall"
+            android:textColor="@color/bg_blue_normal"
+            android:textSize="@dimen/text_size_12"/>
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/AppTheme.Line_V"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/text_fix"/>
+    </RelativeLayout>
+</RelativeLayout>

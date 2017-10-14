@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="circleTextView">
+        <attr name="ct_backgroundColor" format="color" />
+        <attr name="ct_border_width" format="dimension" />
+        <attr name="ct_border_color" format="color" />
+        <attr name="ct_border_alpha" format="float" />
+        <attr name="ct_type" format="enum">
+            <enum name="shadow_gradual" value="1"/>
+            <enum name="shadow_alpha" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LockPatternView">
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionView">
+        <attr name="av_color" format="color" />
+        <attr name="av_action" format="enum">
+            <enum name="drawer" value="0" />
+            <enum name="back" value="1" />
+            <enum name="close" value="2" />
+            <enum name="plus" value="3" />
+            <enum name="more" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleDotProgressBar">
+        <attr name="progressMax" format="integer" />
+        <!--完成进度点的颜色-->
+        <attr name="dotColor" format="color" />
+        <!--未完成进度点的颜色-->
+        <attr name="dotBgColor" format="color" />
+
+        <!--显示模式-->
+        <attr name="showMode" >
+            <!--空-->
+            <enum name="NULL" value="0" />
+            <!--只有百分比和单位-->
+            <enum name="PERCENT" value="1" />
+            <!--全显，包括百分比和单位、按钮-->
+            <enum name="ALL" value="2" />
+        </attr>
+
+        <!--显示的百分比-->
+        <attr name="percentTextSize" format="dimension" />
+        <attr name="percentTextColor" format="color" />
+        <!--百分比使用系统字体，默认为false(使用外部导入字体assets/fonts/HelveticaNeueLTPro.ttf)-->
+        <attr name="isPercentFontSystem" format="boolean" />
+        <!--百分比瘦身大小-->
+        <attr name="percentThinPadding" format="integer" />
+
+        <!--百分比单位-->
+        <attr name="unitText" format="string" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="unitTextColor" format="color" />
+        <!--单位与百分比的底部对齐方式-->
+        <attr name="unitTextAlignMode">
+            <!--默认对齐-->
+            <enum name="DEFAULT" value="0" />
+            <!--中文对齐-->
+            <enum name="CN" value="1" />
+            <!--英文对齐：主要针对底部长的字母或字符，如：g、j、p、q、y、$、@等，其他几乎字母或字符都可以使用默认对齐-->
+            <enum name="EN" value="2" />
+        </attr>
+
+        <!--按钮-->
+        <attr name="buttonText" format="string" />
+        <attr name="buttonTextSize" format="dimension" />
+        <attr name="buttonTextColor" format="color" />
+        <attr name="buttonBgColor" format="color" />
+        <attr name="buttonClickColor" format="color" />
+        <attr name="buttonClickBgColor" format="color" />
+        <attr name="buttonTopOffset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+</resources>

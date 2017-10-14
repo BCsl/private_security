@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_release_count"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_20dp">
+
+            <ImageView
+                android:id="@+id/img_slowly"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_70dp"
+                android:src="@drawable/ic_slowly" />
+
+            <TextView
+                android:id="@+id/text_release_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                tools:text="8个应用抢占WIFI带宽" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45dp"
+            android:background="@color/bg_normal"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Running Apps"
+                android:textColor="@color/font_light_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="Cumulative data"
+                android:textColor="@color/font_light_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mtoolbar"
+        layout="@layout/layout_toolbar_alpha" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_release"
+        android:layout_below="@+id/mtoolbar"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn" />
+
+    <TextView
+        android:id="@+id/text_release"
+        style="@style/comm_btn_style"
+        android:layout_alignParentBottom="true"
+        android:text="@string/release_bandwidth"
+        android:textAllCaps="true" />
+</RelativeLayout>

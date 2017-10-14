@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="backgroundColor"
+    android:duration="1500"
+    android:valueFrom="@color/circle_scan_blue"
+    android:valueTo="@color/circle_scan_orange"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:valueType="intType">
+</objectAnimator>

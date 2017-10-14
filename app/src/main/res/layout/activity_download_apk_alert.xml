@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_virus_monitor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_red_top_corner"
+        android:padding="@dimen/margin_10dp">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/margin_50dp"
+            android:layout_height="@dimen/margin_70dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/margin_20dp" />
+
+        <ImageView
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:layout_alignRight="@+id/img_logo"
+            android:layout_marginLeft="@dimen/margin_25dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:src="@drawable/ic_virus_2" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="@dimen/margin_30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_owner_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_dialog_logo" />
+
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"
+            tools:text="90浏览器" />
+
+        <TextView
+            android:id="@+id/text_risky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:text="@string/risky_application"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:text="@string/malicious_behavior"
+        android:textColor="@color/font_red_color"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:paddingRight="@dimen/margin_10dp"
+        android:text="@string/malicious_behavior_details"
+        android:textColor="@color/font_light_gray"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_20dp"
+        android:text="@string/virus_name"
+        android:textColor="@color/font_red_color"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/text_virus_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="Android.faljdfa.dl" />
+
+
+    <TextView
+        android:id="@+id/text_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:background="@drawable/bg_green_click"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:textAllCaps="true"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20" />
+</LinearLayout>

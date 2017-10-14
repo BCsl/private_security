@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_normal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_10dp"
+    android:paddingLeft="@dimen/margin_15dp"
+    android:paddingRight="@dimen/margin_15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_corner"
+        android:padding="@dimen/margin_10dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="133dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_icon"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/text_size_16"
+            tools:text="Power Usage Ranking" />
+
+        <TextView
+            android:id="@+id/text_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_toRightOf="@+id/img_icon"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/text_size_13"
+            tools:text="Too many junk file ahfjk;ajkl;fj;ajffasdfjakldfj;af" />
+
+        <TextView
+            android:id="@+id/text_fix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_icon"
+            android:layout_toRightOf="@+id/img_icon"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="FIX NOW"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_above="@+id/text_fix"
+            android:layout_toRightOf="@+id/img_icon"
+            android:background="@color/bg_normal" />
+    </RelativeLayout>
+
+</LinearLayout>
+

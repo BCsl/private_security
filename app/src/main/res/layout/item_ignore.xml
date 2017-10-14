@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_margin"
+                android:paddingRight="@dimen/dp_margin">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/dp_margin"
+        android:layout_toRightOf="@+id/img_logo"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="@dimen/text_size_15"
+        tools:text="360 Security"/>
+
+    <ImageView
+        android:id="@+id/img_del"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_tr_clicked"
+        android:padding="@dimen/margin_15dp"
+        android:src="@drawable/ic_del"/>
+
+    <View
+        style="@style/AppTheme.Line_H"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_10dp"/>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/margin_50dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_virus_2"/>
+</RelativeLayout>

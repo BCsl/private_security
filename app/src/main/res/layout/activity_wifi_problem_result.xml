@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal">
+
+    <LinearLayout
+        android:id="@+id/layout_wifi_problem"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_gradient_orange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_20dp">
+
+        <ImageView
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="@dimen/margin_80dp"
+            android:src="@drawable/ic_wifi_risk" />
+
+        <TextView
+            android:id="@+id/text_problems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="Risk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_22" />
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textColor="@color/white_70"
+            tools:text="Speed 300KB/S" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mtoolbar"
+        layout="@layout/layout_toolbar_alpha" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_change_wifi"
+        android:layout_below="@+id/mtoolbar"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/margin_10dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/layout_change_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_result_done"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/text_change_wifi"
+            style="@style/comm_btn_style"
+            android:text="@string/change_wi_fi"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

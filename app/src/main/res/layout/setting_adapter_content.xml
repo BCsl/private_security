@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/setting_apdater_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="#5b5b5b"
+        android:textSize="16sp"
+        android:text="内容"
+        android:background="@drawable/bg_white_clicked"
+        android:paddingLeft="@dimen/margin_25dp"
+        android:gravity="center_vertical"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/setting_apdater_content_switch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        app:switchMinWidth="48dp" />
+
+</RelativeLayout>

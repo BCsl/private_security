@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mtoolbar"
+        layout="@layout/layout_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_ignore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layoutAnimation="@anim/layout_anim_ignore_list"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/text_empty_ignore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_100dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_40dp"
+            android:drawableTop="@drawable/img_ignore_empty"
+            android:gravity="center"
+            android:text="@string/ignored_apps_won_t_be_nscanned_any_more"
+            android:textColor="@color/font_light_gray"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:id="@+id/text_empty_ignore_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/ignored_apps_won_t_be_nscanned_any_more_2"
+            android:textColor="@color/font_light_gray"
+            android:textSize="16.5sp" />
+    </LinearLayout>
+
+</LinearLayout>

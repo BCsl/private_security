@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_alpha" />
+
+    <com.tools.security.widget.CircleDotProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/margin_100dp"
+        android:layout_height="@dimen/margin_100dp"
+        android:layout_centerInParent="true"
+        app:dotBgColor="@color/white_20"
+        app:dotColor="@color/white"
+        app:progressMax="40"
+        app:showMode="NULL" />
+
+    <TextView
+        android:id="@+id/text_current_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        tools:text="Z810" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient_white_tr"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_circle_stroke"
+        android:padding="@dimen/margin_40dp" />
+
+    <ImageView
+        android:id="@+id/img_wifi"
+        android:layout_width="@dimen/margin_50dp"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_wifi_able" />
+
+    <com.tools.security.widget.MyScrollView
+        android:id="@+id/scrollview_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_90dp"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_marginLeft="@dimen/margin_50dp"
+        android:layout_marginRight="@dimen/margin_50dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60dp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_connected"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/wi_fi_is_connected" />
+
+                <View
+                    android:id="@+id/img_connected"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_no_captive"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/no_captive_portal" />
+
+                <View
+                    android:id="@+id/img_captive"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_arp"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/arp_detection" />
+
+                <View
+                    android:id="@+id/img_arp"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_devices"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/malicious_device_detection" />
+
+                <View
+                    android:id="@+id/img_devices"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_mitm"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/mitm_attack_detection" />
+
+                <View
+                    android:id="@+id/img_mitm"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_encryption"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/encryption_status" />
+
+                <View
+                    android:id="@+id/img_encryption"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_speed"
+                style="@style/RelativeLayout_WifiScanning">
+
+                <TextView
+                    style="@style/TextView_WifiScanning"
+                    android:text="@string/speed_test" />
+
+                <View
+                    android:id="@+id/img_speed"
+                    style="@style/ImageView_WifiScanning" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.tools.security.widget.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_90dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linear_devices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_10dp">
+
+            <ImageView
+                android:id="@+id/img_tab_security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wifi_security" />
+
+            <TextView
+                android:id="@+id/text_tab_security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:text="Security"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/wifi_security_line"/>
+
+        <LinearLayout
+            android:id="@+id/linear_release"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_10dp">
+
+            <ImageView
+                android:id="@+id/img_tab_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wifi_speed" />
+
+            <TextView
+                android:id="@+id/text_tab_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:text="Speed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

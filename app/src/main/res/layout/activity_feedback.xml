@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_normal"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_white_clicked_corner"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/feedback_common"
+            android:textColor="@drawable/font_black_click"
+            android:textSize="@dimen/text_size_14"/>
+
+        <ImageView
+            android:id="@+id/img_triangle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_riangle"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_margin"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="@string/feedback_edit_tip"
+        android:lines="7"
+        android:padding="10dp"
+        android:textColorHint="@color/font_light_gray"
+        android:textSize="@dimen/sp_14"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/feedback_bottom_tip"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="13sp"/>
+</LinearLayout>

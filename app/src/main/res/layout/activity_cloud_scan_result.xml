@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_normal">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_done"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_normal">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_normal"
+                app:collapsedTitleGravity="center"
+                app:expandedTitleGravity="center"
+                app:layout_collapseParallaxMultiplier="0.7"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--app:contentScrim="?attr/colorPrimary"-->
+                <ImageView
+                    android:id="@+id/img_status"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_40dp"
+                    android:src="@drawable/ic_safe"/>
+
+                <TextView
+                    android:id="@+id/text_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="145dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_25"
+                    android:textStyle="bold"
+                    tools:text="In Danger"/>
+
+                <TextView
+                    android:id="@+id/text_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="182dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="No threat found"/>
+
+                <include layout="@layout/layout_toolbar_coordinator"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_normal"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_anim_scan_result_in"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:src="@drawable/ic_back_white"/>
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right|top"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/margin_12dp"
+            android:src="@drawable/ic_menu_small"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_done"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_result_done"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_done"
+            style="@style/button_style"
+            android:background="@drawable/bg_result_category"
+            android:gravity="center"
+            android:text="DONE"
+            android:textColor="@color/toolbar_color"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>
+

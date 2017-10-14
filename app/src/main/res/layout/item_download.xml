@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_time_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_normal"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone"
+        tools:text="Toady" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="75dp"
+        android:layout_height="@dimen/margin_70dp"
+        android:layout_below="@+id/text_time_group"
+        android:paddingBottom="@dimen/margin_15dp"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingTop="@dimen/margin_15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_file" />
+
+    <View
+        style="@style/AppTheme.Line_H"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/img_icon" />
+
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_time_group"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_toLeftOf="@+id/img_menu"
+        android:layout_toRightOf="@+id/img_icon"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/black_1"
+        android:textSize="@dimen/text_size_16"
+        tools:text="hfahfljasdfhajkldfasdfhasdjklfhnasdlhflasdjkhflasdfadhfl.apk" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_name"
+        android:layout_alignTop="@+id/line"
+        android:layout_alignBottom="@+id/line"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_dd_safe"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/margin_20dp"
+        android:layout_below="@+id/text_name"
+        android:layout_marginTop="@dimen/margin_3dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/text_status"
+        android:background="@color/black_1" />
+
+    <TextView
+        android:id="@+id/text_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/line"
+        android:layout_alignBottom="@+id/line"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/line"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/gray"
+        tools:text="from Download" />
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="@dimen/margin_40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_icon"
+        android:layout_below="@+id/text_time_group"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_dd_more" />
+</RelativeLayout>

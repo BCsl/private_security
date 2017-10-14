@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:paddingRight="@dimen/margin_16dp"
+        android:paddingTop="@dimen/margin_15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="visible"
+        tools:text="Virus definition is up-to-date" />
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:lineSpacingExtra="@dimen/margin_3dp"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:paddingRight="@dimen/margin_16dp"
+        android:paddingTop="@dimen/margin_12dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_13"
+        android:visibility="visible"
+        tools:text="Version:20170Version:201700asion:20170Version:2017sion:20170Version:2017Version:201700aVersion:201700a0a" />
+
+
+    <View
+        android:id="@+id/line"
+        style="@style/AppTheme.Line_H"
+        android:layout_below="@+id/text_content"
+        android:layout_marginTop="@dimen/margin_15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line">
+
+        <TextView
+            android:id="@+id/text_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_bottom_corner2"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_17"
+            tools:text="LATER" />
+
+        <View
+            android:id="@+id/line_v"
+            style="@style/AppTheme.Line_V"
+            android:layout_marginBottom="@dimen/margin_3dp"
+            android:layout_marginTop="@dimen/margin_3dp" />
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_bottom_corner2"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_17"
+            tools:text="SCAN" />
+    </LinearLayout>
+</RelativeLayout>

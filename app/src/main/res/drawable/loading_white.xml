@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_scan1" />
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:interpolator="@android:anim/linear_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="359">
+            <bitmap
+                android:antialias="true"
+                android:filter="true"
+                android:src="@drawable/bg_scan2" />
+        </rotate>
+    </item>
+
+</layer-list>

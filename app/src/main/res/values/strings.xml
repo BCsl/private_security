@@ -1,0 +1,371 @@
+<resources>
+    <string name="app_name">Ultra Security</string>
+    <string name="ultra_security">Ultra Security</string>
+    <string name="_1_antivirus_engine_inside">#1 Antivirus engine inside</string>
+    <string name="ignored_apps_won_t_be_nscanned_any_more">Ignored apps won\'t be</string>
+    <string name="ignored_apps_won_t_be_nscanned_any_more_2">scanned any more</string>
+
+    <string name="deep_scan">Scanning Files</string>
+    <string name="scan_safe">Safe</string>
+    <string name="scan_safe_btn">DONE</string>
+    <string name="about_us">About</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="eula">EULA</string>
+    <string name="about_us_tip">&#169;2016-2020 Ultra Mobile Team.All Rights Reserved.</string>
+
+    <string name="splash_tip">The Best Choice For Mobile Protection</string>
+    <string name="splash_tip_two">&#169;2016-2020 Ultra Mobile Team.</string>
+    <string name="splash_tip_three">All Rights Reserved</string>
+    <string name="ignore_list">Ignore List</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate">Rate</string>
+    <string name="malicious_behavior_details">• This app has a very low user rating\n• May cause your device to slow down or freeze</string>
+    <string name="malicious_behavior">Malicious behavior:</string>
+    <string name="risky_application">Risky Application</string>
+    <string name="virus_name">Virus name</string>
+    <string name="unistall">Unistall</string>
+
+    <string name="browser_history">Browser Privacy</string>
+    <string name="browser_history_clear">CLEAN ALL</string>
+    <string name="clear_error_tip">There is something wrong. Retry it. </string>
+
+    <string name="sdcard_scan_error_tip">No available SD card for scanning</string>
+    <string name="ignore">Ignore</string>
+
+    <string name="home_title_tip">5-Star Antivirus Engine Inside</string>
+    <string name="default_virus_name">Trojan/Android.Triada.b[exp,opd]</string>
+    <string name="install_time">• Install time:</string>
+    <string name="default_simple_date_format">yyyy-MM-dd</string>
+    <string name="powered_by_trustlook">Powered by Trustlook</string>
+
+    <string name="result_normal" formatted="false"><![CDATA[• <font color="#52d282" size="22">%s</font> apps scanned.<br>• Virus definition:<font color="#f7a729" size="22">%s</font>]]></string>
+    <string name="advice_uninstall" formatted="false"><![CDATA[Advice:<font color="#d73358">Uninstall Immediately</font>]]></string>
+    <string name="advice_del" formatted="false"><![CDATA[Advice:<font color="#d73358">Delete Immediately</font>]]></string>
+    <string name="clean">CLEAN</string>
+    <string name="cache_junk">Cache Junk</string>
+    <string name="ad_junk">Ad Junk</string>
+    <string name="malware">Malware</string>
+    <string name="containning_virus">• Containing Virus:%s</string>
+    <string name="uninstall">UNINSTALL</string>
+
+    <string name="last_scan">Last Scan: %s</string>
+
+    <string name="feedback_title">FeedBack</string>
+    <string name="feedback_edit_tip">Please write your comments here, provide as much detail as you can.(especially if you are reporting a bug). We are always listening and improving.</string>
+    <string name="feedback_bottom_tip">Phone model and version will be collected for diagnosing your issue. We promise not to take any person information, in accordance with our privacy policy.</string>
+    <string name="feedback_common">Common Feedback</string>
+    <string name="feedback_sug">Suggestion I Got</string>
+    <string name="feedback_pro">Problem I Found</string>
+    <string name="feedback_force">Forced/Tricked Installation</string>
+    <string name="resolve_all">RESOLVE ALL</string>
+    <string name="junk">Junk</string>
+    <string name="junk_scanned">Junk file scanned</string>
+    <string name="browser_privacy">Browser Privacy</string>
+    <string name="personal_browser_history">Personal browser history</string>
+    <string name="clean_cap">CLEAN</string>
+    <string name="done">DONE</string>
+    <string name="malware_scan">Malware scan</string>
+    <string name="question_dialog_rating">Would you mind rating us a 5-star on Google Play?</string>
+    <string name="not_at_all">Not at all</string>
+    <string name="give_5_stars">Give 5 Stars</string>
+    <string name="title_dialog_rating" formatted="false"><![CDATA[You just cleaned up <font color="#f7a729">%s</font> junk files!]]></string>
+    <string name="question_dialog_feedback">Would you mind giving us feedback?\nYour opinions mean a lot to us</string>
+
+    <string name="avl_permissionDescription">AVL Engine</string>
+    <string name="avl_permissionLable">AVL Engine</string>
+    <string name="avl_permissionGroup">AVL Engine</string>
+
+    <!--应用锁相关-->
+    <string name="app_lock_title">App Lock</string>
+    <string name="lock_recommend_tip1">apps with privacy issues</string>
+    <string name="lock_recommend_tip2">Lock your app from accessing your data</string>
+    <string name="lock_tip_1">Set the unlock pattern of apps</string>
+    <string name="lock_tip_2">Draw the pattern again to confirm</string>
+    <string name="lock_tip_3">Email for forgotten password</string>
+    <string name="lock_setting_title">AppLock Setting</string>
+    <string name="lock_switch_number_code">Switch to PIN Code</string>
+    <string name="lock_switch_gesture_code">Switch to Pattern</string>
+    <string name="lock_switch_reset">Reset</string>
+    <string name="lock_setting">Settings</string>
+    <string name="lock_system">System</string>
+    <string name="lock_apps">APPS</string>
+    <string name="lock_invisible_pattern">Invisible pattern</string>
+    <string name="lock_forgot_pwd">Forgot Passcode</string>
+    <string name="lock_forgot_pwd_2">Forgot?</string>
+    <string name="lock_forgot_tip_1">We will send verification code to your mail</string>
+    <string name="lock_send_btn">SEND</string>
+    <string name="lock_forgot_tip_2">Enter the verification code and get your passcode</string>
+    <string name="lock_forgot_hint">Verification Code</string>
+    <string name="lock_reset_btn">RESET PASSCODE</string>
+    <string name="lock_menu_text_1">Don\'t lock this app</string>
+    <string name="lock_menu_text_2">Confirm your identity</string>
+    <string name="lock_model">UnLock Mode</string>
+    <string name="lock_model_1">Lock apps at screen off</string>
+    <string name="lock_model_2">Lock apps after screen off 3 mins</string>
+    <string name="lock_model_3">Lock apps immediately upon exit</string>
+    <string name="lock_Enter_password_once_to_unlock_all_apps">Enter password once to unlock all apps</string>
+    <string name="lock_Display_Lock_Mode_Hint">Display Lock Mode Hint</string>
+    <string name="lock_Password">Password</string>
+    <string name="lock_Change_Password">Change Password</string>
+    <string name="lock_Invisible_pattern">Invisible pattern</string>
+    <string name="lock_screen_lock">Screen Lock Intruder Selfie</string>
+    <string name="lock_type_number">Numbers</string>
+    <string name="lock_type_pattern">Pattern</string>
+    <string name="lock_type_passcode">Passcode</string>
+    <string name="lock_type_others">Others</string>
+    <string name="lock_change_passcode">Change Passcode</string>
+    <string name="lock_allow_exit">Allow a brief exit</string>
+    <string name="lock_relock_screen">Re-lock after screen</string>
+    <string name="lock_change_email_title">Email for forgotten password</string>
+    <string name="lock_btn_done">DONE</string>
+    <string name="lock_email_tip">Please enter your Email</string>
+    <string name="lock_email_error_tip">Please enter a valid email address</string>
+    <string name="lock_permissions_dialog_title">Please find and enable Ultra Security for proper working of AppLock.</string>
+    <string name="lock_permissions_dialog_btn">GOT IT!</string>
+    <string name="lock_app_desc">Protect your personal info</string>
+    <string name="lock_app_desc_gallery3d">Protect your private photos</string>
+    <string name="lock_app_desc_msg">Protect your private messages</string>
+    <string name="lock_app_desc_info">Protect your personal info</string>
+    <string name="lock_check_code_error">Verification code error</string>
+    <string name="lock_reset_code_incorrect">Incorrect</string>
+    <string name="lock_email_send_success">Email send successfully,check your mailbox</string>
+    <string name="lock_reset_success">Passcode reset Successfully</string>
+    <string name="lock_first_btn_default">PROTECT</string>
+    <string name="lock_first_btn" formatted="false">PROTECT(%s)</string>
+    <string name="lock_btn_lock">LOCK</string>
+    <string name="lock_success_title">Protected</string>
+    <string name="lock_success_desc">The apps below are locked.</string>
+    <!--图形解锁相关-->
+    <string name="lock_recording_intro_header">Set the unlock pattern of apps</string>
+    <string name="lock_settings_help_how_to_record">How to draw an unlock pattern</string>
+    <string name="lock_recording_incorrect_too_short">Should connect at least 4 dots.</string>
+    <string name="lock_pattern_entered_header">Pattern Recorded</string>
+    <string name="lock_need_to_confirm">Draw the pattern again to confirm</string>
+    <string name="lock_need_to_unlock_wrong">Patterns do not match, try again please.</string>
+    <string name="lock_pattern_confirmed_header">Email for forgotten password</string>
+    <string name="password_gestrue_tips">Draw pattern to unlock</string>
+    <string name="password_error_count">Patterns do not match.try again please.</string>
+    <string name="lock_draw_unlock_pattern">Draw unlock pattern</string>
+    <string name="lock_enter_pin_code">Enter PIN code</string>
+
+    <!--图形解锁控件相关-->
+    <string name="lockscreen_access_pattern_cell_added">已添加单元格</string>
+    <string name="lockscreen_access_pattern_start">Draw an unlock pattern</string>
+    <string name="lockscreen_access_pattern_detected">Pattern Saved</string>
+    <string name="lockscreen_access_pattern_cleared">Pattern Ereased</string>
+    <!--数字解锁相关-->
+    <string name="num_create_text_01">Enter 4 digits password to unlock</string>
+    <string name="num_create_text_02">Enter again to confirm</string>
+    <string name="num_create_text_03">Passwords did not match, try again</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="number_0">0</string>
+    <string name="password_short">Please enter at least 4 characters.</string>
+    <string name="lock_search_hint">Search...</string>
+    <string-array name="lock_time_array">
+        <item>15 Seconds</item>
+        <item>30 Seconds</item>
+        <item>1 Minutes</item>
+        <item>3 Minutes</item>
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>30 Minutes</item>
+    </string-array>
+
+    <string name="wifi_bandwidth_success">Excellent</string>
+    <string name="wifi_permissions_dialog_title">To clean apps more efficiently,please find and enable Ultra Security</string>
+
+    <string name="download_security">Download Security</string>
+    <string name="accessibility_service_description">Ultra Security(Protect your Phone)</string>
+    <string name="show_explore">Show \"Explore\"</string>
+    <string name="widget_name_download">Security Download</string>
+    <string name="dl_scan_result_title" formatted="false"><![CDATA[<font color="#1f90f9">Safe </font>\"%s\"]]></string>
+    <string name="dl_scan_from">Find file from %s</string>
+
+    <string name="delete">Delete</string>
+    <string name="open">OPEN</string>
+    <string name="set_as">SET AS</string>
+    <string name="share">SHARE</string>
+    <string name="install">INSTALL</string>
+    <string name="wifi_security">Wi-Fi Security</string>
+    <string name="wifi_devices">Wi-Fi Devices List</string>
+    <string name="wifi_release"> </string>
+    <string name="wifi_settings">WiFi Settings</string>
+    <string name="devices_list">Devices List</string>
+    <string name="release_bandwidth">Release Bandwidth</string>
+    <string name="release_bandwidth_count">%s Bandwidth Occupying Apps</string>
+    <string name="wifi_scan">WiFi Scan</string>
+
+    <string name="update_viruslib_size" formatted="false"><![CDATA[<font color="#1f90f9">%s</font>%s]]></string>
+    <string name="network_error">Network Connection Error</string>
+    <string name="network_error_desc">Connection error.Please check your network settings.</string>
+    <string name="cancel_cap">CANCEL</string>
+    <string name="set">SET</string>
+    <string name="scanning_file_cancel_title">Scanning,are you sure you want to cancel?</string>
+    <string name="cap_continue">CONTINUE</string>
+
+    <string name="dialog_virus_lib_content" formatted="false">Current version: %s\nLatest version: %s\nThe last update check was %s ago</string>
+    <string name="later_upper">LATER</string>
+    <string name="virus_lib_up_to_date">Virus definition is up-to-date.</string>
+    <string name="scan_upper">SCAN</string>
+    <string name="virus_lib_version">Version: %s</string>
+    <string name="cancel_upper">CANCEL</string>
+    <string name="contiune_upper">CONTINUE</string>
+    <string name="virus_lib_def_failed">Virus Definitions Failed.</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="virus_lib_current_version">Current version: %s</string>
+    <string name="update_upper">UPDATE</string>
+    <string name="virus_def_update">Virus Definitions Update</string>
+    <string name="virus_lib_updated_failed">Update Failed.</string>
+    <string name="virus_lib_already_up_to_date">Already up-to-date.</string>
+    <string name="virus_lib_def_up_to_date">Virus definition is up-to-date.</string>
+
+    <string name="dialog_rate_virus">You just resolved %s viru(s) !</string>
+    <string name="dialog_rate_junk">You just cleaned up %s junk files!</string>
+    <string name="dialog_rate_privacy">You just protected your privacy !</string>
+    <string name="dialog_rate_part">Problem solved!</string>
+    <string name="dialog_rate_all">Your phone is on good condition</string>
+    <string name="unkown">Unkown</string>
+    <string name="delete_success">delete success!</string>
+    <string name="scanning">Scanning:%s</string>
+    <string name="download_from">from %s</string>
+    <string name="file"> Files</string>
+    <string name="threats">%s Threat(s)</string>
+    <string name="malicious">Malicious</string>
+    <string name="risky">Risky</string>
+    <string name="classification">Classification:%s</string>
+    <string name="threat_detected">Threat Detected(%s)</string>
+
+    <string name="CircleDotProgressBar_speed_up_one_key">Speed</string>
+    <string name="CircleDotProgressBar_progress_out_of_range">progress must between 0 and max(%1$d)</string>
+
+    <!--设置相关-->
+    <string name="setting_activity_title">Settings</string>
+    <string-array name="anti_irus">
+        <item>Anti-Virus</item>
+        <item>Database Update Alert</item>
+        <item>Real-Time Protection</item>
+        <item>Download Protection</item>
+        <item>Website Protection</item>
+        <item>Ignore List</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Wi-Fi Security</item>
+        <item>Strange Wi-Fi Alert</item>
+        <item>Risky Wi-Fi Alert</item>
+    </string-array>
+    <string-array name="privacy_cleaner">
+        <item>Privacy Cleaner</item>
+        <item>Browser History</item>
+        <item>Search History</item>
+        <item>Clipboard Content</item>
+    </string-array>
+    <string-array name="general">
+        <item>General</item>
+        <!--<item>Language</item>-->
+        <item>Feedback</item>
+        <item>Rate</item>
+        <item>About</item>
+    </string-array>
+
+    <!--侧滑栏相关-->
+    <string name="wifi_safety">Wi-Fi Security</string>
+    <string name="app_lock">App Lock</string>
+    <string name="download_safety">Download Security</string>
+    <string name="deep_scans">Scan Files</string>
+    <string name="phone_boost">Phone Boost</string>
+    <string name="clean_junk_files">Clean Junk Files</string>
+    <string name="battery_saver">Battery Saver</string>
+    <string name="text_phone_boost_url">https://play.google.com/store/apps/details?id=com.cool.clean</string>
+    <string name="battery_saver_url">https://play.google.com/store/apps/details?id=com.khome.kubattery</string>
+    <string name="cool_clean_app">com.cool.clean</string>
+    <string name="save_battery_app">com.khome.kubattery</string>
+
+
+    <string name="feed_back">Feed Back</string>
+    <string name="user_rate">Rate</string>
+    <string name="virus_update">Virus Definition Update</string>
+    <string name="settings">Settings</string>
+
+    <!--facebook相关-->
+    <string name="share_facebook_content_title">Ultra Security-Antivirus-App Lock on Google Play</string>
+    <string name="share_facebook_content_dec">Protects my phone against virus and snoopers. Plus it is extremely Lite, Fast, and FREE! Have a try!</string>
+    <string name="facebook_app_id">1191288307627495</string>
+    <!--about-->
+    <string name="about_Like_us_on_Facebook">Like us on Facebook</string>
+    <string name="about_Join">Join Google+ community</string>
+    <string name="about_rate">Rate us at GooglePlay</string>
+
+    <string name="net_error">Network Error!</string>
+    <string name="your_phone">My device</string>
+    <string name="gate_net">Wi-Fi AP</string>
+    <string name="unknown">Unknown Name</string>
+
+    <string name="version">version %s</string>
+    <string name="_2016_2017_ultra_security_team_nall_right_reserved">©2016-2017 Ultra Security Team+\nAll Rights Reserved</string>
+    <string name="wifi_devices_count" formatted="false"><![CDATA[<font color="#d73358">%s</font> devices are sharing the same Wi-Fi hotspot]]></string>
+    <string name="wifi_device_scan">Wi-Fi Device List</string>
+    <string name="apple">Apple</string>
+    <string name="ok">OK</string>
+    <string name="device_details" formatted="false">Brand: %s\nIP: %s\nMac Address: %s</string>
+    <string name="speed_test_cap">SPEED TEST</string>
+
+
+    <string name="scanned_files">Scanned %s files</string>
+    <string name="problems_found">%s problems found</string>
+
+    <string name="accessibility_service_desc">Turn on the above button to enable Ultra Security.\n\nEnable to protect:\n 1.Effectively block bandwidth occupying apps.\n 2.Sensitive browing history\n 3.Advance battery saving activites\n\nYou may receive privacy warnings,this is a standard procedure on all Android OS when enabling Accessibility Services.Ultra Security will NOT collect ANY personal data.</string>
+    <string name="wi_fi_is_connected">Wi-Fi is connected</string>
+    <string name="no_captive_portal">No Captive Portal</string>
+    <string name="arp_detection">ARP detection</string>
+    <string name="malicious_device_detection">Malicious device detection</string>
+    <string name="mitm_attack_detection">MITM attack detection</string>
+    <string name="encryption_status">Encryption Status</string>
+    <string name="speed_test">Speed Test</string>
+    <string name="change_wi_fi">CHANGE-WI-FI</string>
+    <string name="cleanning_bandwidth_occupying_apps">Cleaning bandwidth occupying apps...</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="release_count" formatted="false"><![CDATA[<font size="50">%s/</font>%s]]></string>
+
+    <string name="all_threat_resolved">All threats killed</string>
+    <string name="excellent">Excellent</string>
+
+    <string name="force_stop">FORCE STOP</string>
+    <string name="force_stop_OK">OK</string>
+
+
+    <!--安全等级界面-->
+    <string name="security_level_header_tip">Please grant all permission to enhance security level</string>
+    <string name="security_level_header_tip2">Your phone\'s security level is at the best now!</string>
+    <!--安全等级描述-->
+    <string name="security_level_insecure">Insecure</string>
+    <string name="security_level_low">Low</string>
+    <string name="security_level_basic">Basic</string>
+    <string name="security_level_full_protection">Full Protection</string>
+
+    <string-array name="security_level_title_array">
+        <item>Accessibility</item>
+        <item>Notification usage</item>
+        <item>Apps with usage access</item>
+    </string-array>
+
+    <string-array name="security_level_desc_array">
+        <item>System optimization and browsing security</item>
+        <item>Assist to protect personal information</item>
+        <item>Protect app privacy and Wi-Fi security</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+
+    <string name="notification_permissions_dialog_title">To improve security level, please find and enable Ultra Security</string>
+</resources>

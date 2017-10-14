@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="sample" />
+    <version value="1" />
+    <list>
+        <mapping class="com.tools.security.bean.ApplicationFlow" />
+        <mapping class="com.tools.security.bean.AppWhitePaper" />
+        <mapping class="com.tools.security.bean.AvlAppInfo" />
+        <mapping class="com.tools.security.bean.AvlFileInfo" />
+        <mapping class="com.tools.security.bean.BrowserHistory" />
+        <mapping class="com.tools.security.bean.CommLockInfo" />
+        <mapping class="com.tools.security.bean.DeviceInfo" />
+        <mapping class="com.tools.security.bean.DownloadFile" />
+        <mapping class="com.tools.security.bean.DownloadScanPath" />
+        <mapping class="com.tools.security.bean.FaviterInfo" />
+        <mapping class="com.tools.security.bean.FileCacheBean" />
+        <mapping class="com.tools.security.bean.FileCacheGroup" />
+        <mapping class="com.tools.security.bean.InputResult" />
+        <mapping class="com.tools.security.bean.LockAutoTime" />
+        <mapping class="com.tools.security.bean.LockStage" />
+        <mapping class="com.tools.security.bean.ResultInfo" />
+        <mapping class="com.tools.security.bean.ResultType" />
+        <mapping class="com.tools.security.bean.RouterInfo" />
+        <mapping class="com.tools.security.bean.RunningAppInfoBean" />
+        <mapping class="com.tools.security.bean.SafeLevel" />
+        <mapping class="com.tools.security.bean.ScannedApp" />
+        <mapping class="com.tools.security.bean.SettingInfo" />
+        <mapping class="com.tools.security.bean.ThumbnailsData" />
+        <mapping class="com.tools.security.bean.WifiDevice" />
+        <mapping class="com.tools.security.bean.WifiIgnoreApp" />
+        <mapping class="com.tools.security.bean.WifiReleaseApp" />
+        <mapping class="com.tools.security.bean.WifiProblem" />
+        <mapping class="com.tools.security.bean.CooperationAd" />
+        <mapping class="com.tools.security.bean.FunctionAd" />
+    </list>
+
+    <storage value="external" />
+
+</litepal>

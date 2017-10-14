@@ -1,0 +1,363 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.tools.security">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--应用锁需要的权限-->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions"/>
+    <!--wifi-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <permission
+        android:name="com.zz.ultra.security.permission.ANTI_VIRUS"
+        android:description="@string/avl_permissionDescription"
+        android:label="@string/avl_permissionLable"
+        android:permissionGroup="@string/avl_permissionGroup"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.zz.ultra.security.permission.ANTI_VIRUS"/>
+
+    <application
+        android:name=".common.SecurityApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".settings.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mainscan.view.MainScanActivity"
+            android:label="Scanning"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".settings.AboutUsActivity"
+            android:label="@string/about_us"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".settings.IgnoreActivity"
+            android:label="Ignore List"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".scanfiles.view.ScanFilesActivity"
+            android:label="@string/deep_scan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mainscan.view.MainScanResultActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mainscan.view.ScannedListActivity"
+            android:label="App Scanned"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".common.WebActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".mainscan.view.BrowserHistoryActivity"
+            android:label="@string/browser_history"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".settings.VirusMonitorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+        <activity
+            android:name=".demo.DemoResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".demo.DemoGradientActivity"/>
+
+        <activity
+            android:name=".settings.FeedbackActivity"
+            android:label="@string/feedback_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".download.DownLoadSecurityActivity"
+            android:label="@string/download_security"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".applock.view.AppLockFirstActivity"
+            android:label="@string/app_lock_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".applock.view.unlock.GestureUnlockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/unlock_activity_style"/>
+        <activity
+            android:name=".applock.view.unlock.NumberUnlockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/unlock_activity_style"/>
+        <activity
+            android:name=".applock.view.unlock.GestureSelfUnlockActivity"
+            android:label="@string/app_lock_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.unlock.NumberSelfUnlockActivity"
+            android:label="@string/app_lock_title"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.LockSuccessActivity"
+            android:label="@string/app_lock_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.lock.FirstCreateActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.lock.GestureCreateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.lock.NumberCreateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.LockMainActivity"
+            android:label="@string/app_lock_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"/>
+        <activity
+            android:name=".scanfiles.view.ScanFilesDangerActivity"
+            android:label=" "
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/setting_activity_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.LockSettingActivity"
+            android:label="@string/lock_setting_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.ForgotPwdActivity"
+            android:label="@string/lock_forgot_pwd"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".applock.view.ChangeEmailActivity"
+            android:label="@string/lock_change_email_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiMainActivity"
+            android:label="@string/wifi_security"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiReleaseActivity"
+            android:label="@string/wifi_release"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiScanningActivity"
+            android:label="Speed Testing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiDeviceScanActivity"
+            android:label="@string/wifi_device_scan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WiFiScanActivity"
+            android:label=" "
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiReleasingActivity"
+            android:label="Release Bandwidth"
+            android:theme="@style/AppTheme.FullScreen"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wifi.view.WifiReleaseIgnoreActivity"
+            android:label="Ignore List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.WifiProblemResultActivity"
+            android:label=" "
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wifi.view.AppToIgnoreListActivity"
+            android:label="Add to Ignore List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".demo.BatmobiAdDemoActivity"
+            android:label="Ad Test"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".common.result.CommonResultActivity"
+            android:label=" "
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".main.SecurityLevelActivity"
+            android:label="Security Level"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".demo.StatusBarDemoActivity"
+            android:label="StatusBarDemoActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".receiver.CommLockInfoReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.LockAppLoadService"/>
+        <service android:name=".service.LockService"/>
+
+        <activity
+            android:name=".settings.DownloadAlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+
+        <service android:name=".service.ServicePkgChange2"/>
+        <service android:name=".service.VirusMonitorService"/>
+        <service android:name=".service.ServicePkgChange2"/>
+        <service android:name=".service.VirusMonitorService"/>
+
+        <service
+            android:name=".service.MyAccessibilityService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:process=".remote">
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"/>
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.SecurityNotificationListener"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:process=".remote">
+             
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receiver.PkgChangeReceiver2">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.SdCardDownloadService"/>
+
+        <!--batmobi-->
+        <activity
+            android:name="com.batmobi.BatMobiActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <receiver android:name="com.batmobi.BatMobiBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.batmobi.lock.ChargeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper"/>
+
+        <service android:name="com.batmobi.lock.ChargeLockService"/>
+        <!--batmobi end-->
+
+        <!--Kochava SDK Start-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <receiver
+            android:name="com.kochava.android.tracker.ReferralCapture"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <!--Kochava SDK End-->
+
+        <!--AVL-->
+        <meta-data
+            android:name="AVL_SDK_APPKEY"
+            android:value="E926DD863D643B8D699C5DA50A41BD3B"/>
+        <provider
+            android:name="com.avl.engine.security.AVLProvider"
+            android:authorities="com.zz.ultra.security.AVLprovider"
+            android:permission="com.zz.ultra.security.permission.ANTI_VIRUS"/>
+
+        <!--facebookid-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1191288307627495"
+            android:exported="true"/>
+
+        <provider
+            android:name="com.giftbox.statistic.StaticDataContentProvider"
+            android:authorities="com.zz.ultra.security.statistic.staticprovider"
+            android:exported="true"
+            android:multiprocess="false"/>
+    </application>
+
+</manifest>

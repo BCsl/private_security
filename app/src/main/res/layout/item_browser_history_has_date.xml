@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/history_date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/gray_1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_margin"
+        android:textColor="@color/gray_2"
+        android:textSize="@dimen/sp_14"
+        tool:text="Dakjdlaskjdlksad"/>
+
+    <TextView
+        android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_margin"
+        android:lines="1"
+        android:paddingLeft="@dimen/dp_margin"
+        android:paddingRight="@dimen/dp_margin"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="15sp"
+        tool:text="GooglePlay"/>
+
+    <TextView
+        android:id="@+id/history_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:lines="1"
+        android:paddingLeft="@dimen/dp_margin"
+        android:paddingRight="@dimen/dp_margin"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="12sp"
+        tool:text="sjahdjkashdaskdhaskdjshaldkashdklajshd"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginLeft="@dimen/dp_margin"
+        android:layout_marginTop="@dimen/dp_margin"
+        android:background="@color/line_color"/>
+</LinearLayout>
+
+

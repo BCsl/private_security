@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_primary"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_alpha" />
+
+    <TextView
+        android:id="@+id/text_virus_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scan_count_view"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        android:text="0 Threat(s)" />
+
+    <TextView
+        android:id="@+id/scan_count_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scan_result_view"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_normal"
+        tools:text="fahdfajd" />
+
+    <TextView
+        android:id="@+id/scan_result_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="middle"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/white_70"
+        android:textSize="14sp"
+        tools:text="fahdfajd"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

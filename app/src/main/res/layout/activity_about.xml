@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_normal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <!--应用logo-->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/about_logo" />
+    <!--应用名称-->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/font_deep_gray"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!--应用版本号-->
+    <TextView
+        android:id="@+id/version_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/font_light_gray"
+        android:textSize="14sp"
+        tool:text="Version 1.0.1" />
+
+    <!--facebook-->
+    <LinearLayout
+        android:id="@+id/facebook_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/version_name"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_12dp"
+            android:paddingTop="@dimen/margin_12dp"
+            android:src="@drawable/about_facebook" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/about_Like_us_on_Facebook"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--google+-->
+    <LinearLayout
+        android:id="@+id/google_add_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/facebook_logo"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_12dp"
+            android:paddingTop="@dimen/margin_12dp"
+            android:src="@drawable/about_google_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/about_Join"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--google play-->
+    <LinearLayout
+        android:id="@+id/google_play_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/google_add_logo"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_12dp"
+            android:paddingTop="@dimen/margin_12dp"
+            android:src="@drawable/about_googleplay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/about_rate"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_below="@+id/facebook_logo"
+        android:layout_marginLeft="60dp"
+        android:background="@color/line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_below="@+id/google_add_logo"
+        android:layout_marginLeft="60dp"
+        android:background="@color/line_color" />
+
+    <!--anti的logo-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bottom_privacy"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/about_antian_logo" />
+
+    <LinearLayout
+        android:id="@+id/bottom_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copy_right"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!--privacy-->
+        <TextView
+            android:id="@+id/privacy_policy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_2dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:background="#C4C4C4" />
+
+        <TextView
+            android:id="@+id/eula_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eula"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copy_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/about_us_tip"
+        android:textColor="@color/font_light_gray"
+        android:textSize="@dimen/text_size_10" />
+</RelativeLayout>

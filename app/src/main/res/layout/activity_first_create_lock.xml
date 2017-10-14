@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_main_primary"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/layout_toolbar_alpha"/>
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/step_one"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/one_to_two"
+            android:background="@drawable/bg_white_round"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/bg_blue_normal"/>
+
+        <View
+            android:id="@+id/one_to_two"
+            android:layout_width="20dp"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/step_two"
+            android:background="@color/white_tr4"/>
+
+        <TextView
+            android:id="@+id/step_two"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_white80_round"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/bg_blue_normal"/>
+
+        <View
+            android:id="@+id/two_to_three"
+            android:layout_width="20dp"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/step_two"
+            android:background="@color/white_tr4"/>
+
+        <TextView
+            android:id="@+id/step_three"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/two_to_three"
+            android:background="@drawable/bg_white80_round"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/bg_blue_normal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lock_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation_layout"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible"/>
+
+    <!--图形锁-->
+    <com.tools.security.widget.LockPatternView
+        android:id="@+id/lock_pattern_view"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_above="@+id/switch_lock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:visibility="visible"/>
+
+    <!--数字锁-->
+    <include
+        layout="@layout/layout_num_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch_lock"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/switch_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:background="@drawable/bg_black_click"
+        android:paddingBottom="10dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="10dp"
+        android:text="@string/lock_switch_number_code"
+        android:textColor="@color/white_70"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+    <!--邮箱-->
+    <LinearLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lock_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_edittext_write"/>
+
+            <EditText
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:lines="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:cursorVisible="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/done_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_white_clicked_corner"
+            android:gravity="center"
+            android:text="@string/lock_btn_lock"
+            android:textColor="@color/bg_blue_normal"
+            android:textSize="@dimen/sp_button"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

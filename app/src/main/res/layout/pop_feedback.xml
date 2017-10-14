@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_sug"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_white_clicked"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/feedback_sug"
+        android:textColor="@drawable/font_black_click"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:id="@+id/item_pro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_white_clicked"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/feedback_pro"
+        android:textColor="@drawable/font_black_click"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:id="@+id/item_force"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_down_shadow"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/feedback_force"
+        android:textColor="@drawable/font_black_click"
+        android:textSize="@dimen/text_size_14"/>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_30dp"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/security_level_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:text="Security Level"
+            android:textColor="@color/white_70"
+            android:textSize="@dimen/text_size_11"/>
+
+        <TextView
+            android:id="@+id/security_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/security_level_title"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:drawableLeft="@drawable/security_level_secure"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white_90"
+            android:textSize="@dimen/text_size_17"
+            tools:text="Full Protection"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/img_bg"
+        android:layout_below="@+id/layout_header"
+        android:scrollbarSize="@dimen/margin_3dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar_blue"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_15dp">
+
+            <TextView
+                android:id="@+id/text_wifi"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_wifi"
+                android:text="@string/wifi_safety"/>
+
+            <TextView
+                android:id="@+id/text_applock"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_lock"
+                android:text="@string/app_lock"/>
+
+            <TextView
+                android:id="@+id/text_scan_file"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_sdscan"
+                android:text="@string/deep_scans"/>
+
+            <TextView
+                android:id="@+id/text_download"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_download_security"
+                android:text="@string/download_safety"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/text_check_virus_lib"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_update"
+                android:text="@string/virus_update"/>
+
+            <TextView
+                android:id="@+id/text_settings"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_setting"
+                android:text="@string/settings"/>
+
+            <TextView
+                android:id="@+id/text_feedback"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_feedback"
+                android:text="@string/feed_back"/>
+
+            <TextView
+                android:id="@+id/text_rate"
+                style="@style/TextView_MenuLeft"
+                android:drawableLeft="@drawable/ic_menu_rate"
+                android:text="@string/user_rate"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_menu_left"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/_2016_2017_ultra_security_team_nall_right_reserved"
+        android:textColor="#53a2e6"
+        android:textSize="@dimen/text_size_10"/>
+</RelativeLayout>

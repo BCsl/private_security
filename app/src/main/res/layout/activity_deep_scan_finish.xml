@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/id_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_main_primary"
+                android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_alpha"/>
+
+    <ImageView
+        android:id="@+id/ic_shield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_shiled"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_shield"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/scan_safe"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/done_btn"
+        style="@style/button_style"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/bg_gray_clicked"
+        android:gravity="center"
+        android:text="@string/scan_safe_btn"
+        android:textColor="@color/primary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
